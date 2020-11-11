@@ -93,3 +93,35 @@ body {
     transform: translateY(-100px);
   }
 }
+/* Boxes Loader */
+.boxes {
+  width: 80px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.boxes span {
+  background-color: #ff7b00;
+  animation: boxes 0.4s linear infinite alternate;
+}
+.boxes span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.boxes span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.boxes span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.boxes span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+@keyframes boxes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
